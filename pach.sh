@@ -85,7 +85,7 @@ if [ ! -z "$supertype" ] && [ $supertype -eq "3" ]; then
     metadata_slot=3
     supername="super"
     supersize=$(cat level2/config/super_size.txt)
-    superusage1=$(du -cb level2/*.img | grep total | cut -f1)
+    superusage1=$(du -cb level2/*.img | grep 总用量 | cut -f1)
     command="bin/linux/super/lpmake --metadata-size $metadata_size --super-name $supername --metadata-slots $metadata_slot"
     command="$command --device $supername:$supersize --group amlogic_dynamic_partitions_a:$superusage1"
 
@@ -127,7 +127,7 @@ elif [ ! -z "$supertype" ] && [ $supertype -eq "2" ]; then
     metadata_slot=2
     supername="super"
     supersize=$(cat level2/config/super_size.txt)
-    superusage=$(du -cb level2/*.img | grep total | cut -f1)
+    superusage=$(du -cb level2/*.img | grep 总用量 | cut -f1)
     command="bin/linux/super/lpmake --metadata-size $metadata_size --super-name $supername --metadata-slots $metadata_slot"
     command="$command --device $supername:$supersize --group amlogic_dynamic_partitions:$superusage"
 
