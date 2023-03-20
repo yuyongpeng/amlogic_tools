@@ -13,3 +13,18 @@
     # pack.sh
 # 生成包路径
     # amlogic_tools/out 目录
+
+
+# 添加so文件 以system_a为例
+    # cat >> level2/config/system_a_fs_config << EOF
+      system_a/system/lib/libc++_shared.so 0 0 0644
+      system_a/system/lib/libhwacl.so 0 0 0644
+      system_a/system/lib/libijkffmpeg.so 0 0 0644
+      system_a/system/lib/libijkplayer.so 0 0 0644
+      system_a/system/lib/libijksdl.so 0 0 0644
+      system_a/system/lib/librsjni_androidx.so 0 0 0644
+      system_a/system/lib/librsjni.so 0 0 0644
+      system_a/system/lib/libRSSupport.so 0 0 0644
+      system_a/system/lib/librtmp-jni.so 0 0 0644
+      system_a/system/lib/libserial_port.so 0 0 0644
+      EOF
