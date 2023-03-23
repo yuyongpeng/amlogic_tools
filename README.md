@@ -17,14 +17,19 @@
 
 # 添加so文件 以system_a为例
     # cat >> level2/config/system_a_fs_config << EOF
-      system_a/system/lib/libc++_shared.so 0 0 0644
-      system_a/system/lib/libhwacl.so 0 0 0644
-      system_a/system/lib/libijkffmpeg.so 0 0 0644
-      system_a/system/lib/libijkplayer.so 0 0 0644
-      system_a/system/lib/libijksdl.so 0 0 0644
-      system_a/system/lib/librsjni_androidx.so 0 0 0644
-      system_a/system/lib/librsjni.so 0 0 0644
-      system_a/system/lib/libRSSupport.so 0 0 0644
-      system_a/system/lib/librtmp-jni.so 0 0 0644
-      system_a/system/lib/libserial_port.so 0 0 0644
+      system_a/system/app/t982prod/lib 0 0 0755
+      system_a/system/app/t982prod/lib/arm 0 0 0755
+      system_a/system/app/t982prod/lib/arm/libfilament-jni.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libfilament-utils-jni.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libgltfio-jni.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libc++_shared.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libhwacl.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libijkffmpeg.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libijkplayer.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libijksdl.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/librsjni_androidx.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/librsjni.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libRSSupport.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/librtmp-jni.so 0 0 0644
+      system_a/system/app/t982prod/lib/arm/libserial_port.so 0 0 0644
       EOF
